@@ -1,0 +1,162 @@
+section.header h1, a{
+  margin: 0;
+  padding: 0;
+  font-family:"century gothic";
+}
+
+section.header h1 {
+  font-size: 2.8em;
+  padding: 10px 0;
+  font-weight: 800;
+}
+
+section.header p {
+  font-family: "century gothic";
+  font-size: 1.2em;
+  font-weight: 100;
+  letter-spacing: 2.5px;
+}
+
+.header {
+  width: 100%;
+  padding:60px 0;
+  text-align: center;
+  background: #010d43;
+  color: white;
+}
+
+
+.button-top {
+  font-size: 15px;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 300;
+  margin-top: 30px; 
+}
+
+.button-top:hover {
+  background-color: white;
+  color: #0d227d;
+}
+
+/* Additional CSS rules */
+body {
+    background-image: url(https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/OPIWPJSIGII6VENLZZBZVJOHYE.jpg);   
+  } /* Transforms the background image of our body */
+  
+  #room.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 10px;
+    background-color: #cae8ca;
+    border: 2px solid #4CAF50;
+  }
+  
+  #room {
+    width: 1000px;
+    height: auto;
+    display:block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}/*Changes the width of my room face image to 300px and sets the height to automatically scale */
+
+/* Media query to set room face's width to percentage when viewport is equal to or smaller than 800px */
+@media only screen and (max-width: 1000px) {
+  #room {
+    max-width: 1000px;
+    width: 100%;
+  }
+}
+
+.bigwrapper{
+  background: #010d43;
+  display: inline-block;
+}
+
+.wrapper {
+  padding: 2%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  grid-template-areas:
+    "blurb blurb blurb"
+    "house1 house2 house3"
+    "house4 house5 house6";
+}
+
+div.blurbSection {
+  grid-area: blurb;
+  font-size: larger !important;
+}
+div.box1 {
+  grid-area: house1
+}
+div.box2 {
+  grid-area: house2
+}
+div.box3 {
+  grid-area: house3
+}
+div.box4 {
+  grid-area: house4
+}
+div.box5 {
+  grid-area: house5
+}
+div.box6 {
+  grid-area: house6
+}
+
+/*-- box style */
+
+#box {
+  background-color: #ffffffb0;
+  border: 1px solid black;
+}
+
+#box h3 {
+  text-align: center;
+  font-weight: bold;  
+  color: #000000;
+}
+
+#box p {
+  margin: 5%;
+  text-align: justify;
+  color: #000000;
+}
+
+  /* Button */
+
+	.button {
+		background-color: #010d43;
+		border-radius: 7.5px;
+		color: #ffffff !important;
+		cursor: pointer;
+		display: inline-block;
+		text-align: center;
+    text-decoration: none;
+	}
+
+  .button:hover {
+    background-color: #010d43c0;
+    color: #0d227d;
+  }
+
+  button.fit,
+  .button.fit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.1em;
+    margin-bottom: 0.1em;
+    width: 80%;
+    padding: 5px;
+  }
