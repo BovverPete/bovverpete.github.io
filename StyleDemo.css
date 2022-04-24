@@ -130,7 +130,6 @@ div.box6 {
   background-color: #fbfbfb88;
   border: 1px solid black;
   box-shadow: 5px 5px 5px #5e5d5d8b;
-  
 }
 
 #box h3 {
@@ -141,6 +140,26 @@ div.box6 {
 }
 
 #box p {
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: justify;
+  color: #ffffff;
+}
+
+#box-alt {
+  background-color: #fbfbfb88;
+  border: 1px solid black;
+  box-shadow: 5px 5px 5px #5e5d5d8b;
+}
+
+#box-alt h3 {
+  text-align: justify;
+  font-weight:bolder;  
+  color: #ffffff;
+  font-size: large;
+}
+
+#box-alt p {
   margin-left: 10%;
   margin-right: 10%;
   text-align: justify;
