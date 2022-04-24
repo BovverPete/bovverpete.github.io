@@ -1,21 +1,28 @@
-section.header h1, a{
-  margin: 0;
+section.header h1{
+  position: relative;
   padding: 0;
-  font-family:"century gothic";
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 60px;
+  color: #ffffff;
+  -webkit-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
-section.header h1 {
-  font-size: 2.8em;
-  padding: 10px 0;
-  font-weight: 800;
+h1 span {
+  display: block;
+  font-size: 0.5em;
+  font-weight: 500;
+  line-height: 1.3;
+  color: #ffffff  !important;
+}
+h1 em {
+  font-style: normal;
+  font-weight: 600;
 }
 
-section.header p {
-  font-family: "century gothic";
-  font-size: 1.2em;
-  font-weight: 100;
-  letter-spacing: 2.5px;
-}
 
 .header {
   width: 100%;
@@ -77,6 +84,9 @@ body {
 .bigwrapper{
   background: #010d43;
   display: inline-block;
+  font-family: "Raleway", sans-serif;
+  color: #000000;
+  
 }
 
 .wrapper {
@@ -117,21 +127,33 @@ div.box6 {
 /*-- box style */
 
 #box {
-  background-color: #ffffffb0;
+  background-color: #fbfbfb88;
   border: 1px solid black;
+  box-shadow: 5px 5px 5px #5e5d5d8b;
+  
 }
 
 #box h3 {
   text-align: center;
-  font-weight: bold;  
-  color: #000000;
+  font-weight:bolder;  
+  color: #ffffff;
+  font-size: large;
 }
 
 #box p {
-  margin: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
   text-align: justify;
-  color: #000000;
+  color: #ffffff;
 }
+
+#over {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+
 
   /* Button */
 
@@ -143,6 +165,7 @@ div.box6 {
 		display: inline-block;
 		text-align: center;
     text-decoration: none;
+    font-weight:600;
 	}
 
   .button:hover {
@@ -160,3 +183,36 @@ div.box6 {
     width: 80%;
     padding: 5px;
   }
+
+
+
+  .two h1 {
+    text-transform: capitalize;
+  }
+  .two h1:before {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 2px;
+    content: "";
+    background-color: #c50000;
+  }
+  
+  .two h1 span {
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    line-height: 3em;
+    padding-left: 0.25em;
+    color: rgba(0, 0, 0, 0.4);
+    padding-bottom: 10px;
+  }
+  .alt-two h1 {
+    text-align:center;
+  }
+  .alt-two h1:before {
+    left:50%; margin-left:-30px;
+  }
+  
