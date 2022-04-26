@@ -61,17 +61,6 @@ body {
   grid-row-gap: 20px;
 }
 
-.grid_items > div {
-  background-color: RoyalBlue;
-  padding: 10px;
-}
-.grid_items > div:nth-child(3n + 2) {
-  background-color: DodgerBlue;
-}
-.grid_items > div:nth-child(3n) {
-  background-color: DeepSkyBlue;
-}
-
 @media only screen and (min-width: 640px) {
   .grid_items {
     grid-template-columns: 47.5% 47.5%;
@@ -104,7 +93,7 @@ body {
   text-align: center;
   font-weight:bolder;  
   color: #ffffff;
-  font-size: large;
+  font-size: 1.8em;
 }
 
 #box p {
@@ -112,6 +101,7 @@ body {
   margin-right: 10%;
   text-align: justify;
   color: #ffffff;
+  font-size: 1.5em;
 }
 
 #box-alt {
@@ -126,7 +116,7 @@ body {
   text-align: justify;
   font-weight:bolder;  
   color: #ffffff;
-  font-size: large;
+  font-size: 2em;
 }
 
 #box-alt p {
@@ -134,6 +124,7 @@ body {
   margin-right: 10%;
   text-align: justify;
   color: #ffffff;
+  font-size: 1.6em;
 }
 
 #over {
@@ -290,8 +281,9 @@ body {
   color: #f2f2f2;
   font-size: 0.9em;
   padding: 8px 12px;
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: 30px;
+  left: 47.5%;
   font-family: "Raleway", sans-serif;
 }
 
