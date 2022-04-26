@@ -79,45 +79,46 @@ body {
   color: #000000;
   border-radius: 10px;
 }
-
-/*-- main content */
-
-.wrapper {
-  padding: 2%;
+/* Grid item - mobile friendly adaption */
+.grid_items {
+  padding: 3.75%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1fr 1fr;
-  grid-gap: 10px;
-  grid-template-areas:
-    "blurb blurb blurb"
-    "house1 house2 house3"
-    "house4 house5 house6";
+  grid-template-columns: 100%;
+  grid-column-gap: 0;
+  grid-row-gap: 20px;
 }
 
-div.blurbSection {
-  grid-area: blurb;
-  font-size: larger !important;
+.grid_items > div {
+  background-color: RoyalBlue;
+  padding: 10px;
 }
-div.box1 {
-  grid-area: house1
+.grid_items > div:nth-child(3n + 2) {
+  background-color: DodgerBlue;
 }
-div.box2 {
-  grid-area: house2
-}
-div.box3 {
-  grid-area: house3
-}
-div.box4 {
-  grid-area: house4
-}
-div.box5 {
-  grid-area: house5
-}
-div.box6 {
-  grid-area: house6
+.grid_items > div:nth-child(3n) {
+  background-color: DeepSkyBlue;
 }
 
-/*-- box style */
+@media only screen and (min-width: 640px) {
+  .grid_items {
+    grid-template-columns: 47.5% 47.5%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40px;
+  }
+  .grid_items > div {
+    padding: 20px;
+  }
+}
+@media only screen and (min-width: 981px) {
+  .grid_items {
+    grid-template-columns: 30% 30% 30%;
+    grid-row-gap: 50px;
+  }
+  .grid_items > div {
+    padding: 30px;
+  }
+}
+
 
 #box {
   background-color: #fbfbfb88;
@@ -144,6 +145,8 @@ div.box6 {
   background-color: #fbfbfb88;
   border: 1px solid black;
   box-shadow: 5px 5px 5px #0000008b;
+  border-radius: 10px;
+  margin: 1%;
 }
 
 #box-alt h3 {
