@@ -71,7 +71,19 @@ body {
   grid-row-gap: 20px;
 }
 
-@media only screen and (min-width: 840px) {
+@media only screen and (min-width: 40em) {
+  .grid_items {
+    grid-template-columns: 95%;
+    grid-column-gap: 2%;
+    grid-row-gap: 30px;
+  }
+  .grid_items > div {
+    padding: 10px;
+  }
+}
+
+
+@media only screen and (min-width: 52.5em) {
   .grid_items {
     grid-template-columns: 47.5% 47.5%;
     grid-column-gap: 5%;
@@ -81,7 +93,7 @@ body {
     padding: 20px;
   }
 }
-@media only screen and (min-width: 1081px) {
+@media only screen and (min-width: 67em) {
   .grid_items {
     grid-template-columns: 30% 30% 30%;
     grid-row-gap: 50px;
