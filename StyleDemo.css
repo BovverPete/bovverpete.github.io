@@ -1,5 +1,5 @@
 :root {
-  --bannerGradient: linear-gradient( #010d43, #480053 );;
+  --bannerGradient: linear-gradient( #B87333, 	#8B4000 );;
   --backgroundColor: #fff;
   }
 
@@ -10,7 +10,8 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
-      overflow-x: hidden; 
+      overflow-x: hidden;
+      background-color:#F2D2BD;
   }
 
 
@@ -47,14 +48,10 @@ h1 em {
   text-align: center;
   background: var(--bannerGradient);
   color: white;
-  border-radius: 10px;
 }
 
 
 /* Additional CSS rules */
-body {
-    background-image: url(https://images.unsplash.com/photo-1432847712612-926caafaa802?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80);   
-  } /* Transforms the background image of our body */
 
 
 /*Carosel CSS*/
@@ -62,6 +59,7 @@ body {
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900,900i');
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
 
 
 .carousel {
@@ -327,16 +325,17 @@ transform: translateX(0);
 
 
 #box {
-  background-color: #fbfbfb88;
-  border: 1px solid black;
-  box-shadow: 5px 5px 15px #5e5e5e61;
-  border-radius: 25px;
+    padding: 1em;
+    background: #fff;
+    box-shadow:
+      0 5px 10px rgba(0, 0, 0, 0.1),
+      0 20px 20px rgba(0, 0, 0, 0.05);
 }
 
 #box h3 {
   text-align: center;
   font-weight:bolder;  
-  color: #ffffff;
+  color: #3a3a3a;
   font-size: 1.8em;
 }
 
@@ -344,22 +343,23 @@ transform: translateX(0);
   margin-left: 10%;
   margin-right: 10%;
   text-align: center;
-  color: #ffffff;
+  color: #373737;
   font-size: 1.5em;
 }
 
 #box-alt {
-  background-color: #fbfbfb88;
-  border: 1px solid black;
-  box-shadow: 5px 5px 5px #4242428b;
-  border-radius: 10px;
+  padding: 1em;
+  background: #fff;
+  box-shadow:
+    0 5px 10px rgba(0, 0, 0, 0.1),
+    0 20px 20px rgba(0, 0, 0, 0.05);
   margin: 2em 2em -0.8em 2em;
 }
 
 #box-alt h3 {
   text-align: justify;
   font-weight:bolder;  
-  color: #ffffff;
+  color: #1f1f1f;
   font-size: 2em;
 }
 
@@ -367,7 +367,7 @@ transform: translateX(0);
   margin-left: 10%;
   margin-right: 10%;
   text-align: justify;
-  color: #ffffff;
+  color: #343434;
   font-size: 1.6em;
 }
 
