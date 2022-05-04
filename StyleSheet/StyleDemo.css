@@ -524,7 +524,7 @@ div.bookingFormGroup {
 
 div.bookingFormGroup.inlined {
   width: 49%;
-  display: inline-block;
+  display: block;
   float:left;
   margin-left: 1%;
 }
