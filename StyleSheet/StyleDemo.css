@@ -1,7 +1,7 @@
 :root {
   --bannerGradient: linear-gradient( #B87333, 	#8B4000 );
   --activeBannerGradient: linear-gradient(#8f5927, 	#6a3201 );
-  --toolbarGradient: linear-gradient( #606060, #454444);
+  --toolbarGradient: linear-gradient( #424141, #000000);
   --backgroundColor: #fff;
   --primColor: #dcdcdc;
   --secoColor: #555555;
@@ -435,15 +435,18 @@ transform: translateX(0);
   /* Button stuff */
 
   .button-top {
-    font-size: 1.0em;
+    font-size: 1.2em;
     display: inline-block;
     font-family: "Raleway", sans-serif;
     border: 1px solid white;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
-    font-weight: 300;
-    margin-top: 30px; 
+    font-weight: 600;
+    margin-top: 30px;
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 0.1em;
   }
   
   .button-top:hover {
