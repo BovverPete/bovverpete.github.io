@@ -14,7 +14,7 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
-      background-color:#c0bebe;
+      background-color:#e8e6e6;
   }
 
 
@@ -66,7 +66,7 @@
 
 
 
-
+/* Header CSS */
 
 section.header h1{
   position: relative;
@@ -126,6 +126,9 @@ h1 em {
   margin:auto;  
   margin-top: 2%;
   margin-bottom: 2%;
+  box-shadow:
+  0 5px 10px rgba(0, 0, 0, 0.1),
+  0 20px 20px rgba(0, 0, 0, 0.05);
 }
 
 .carousel-item {
