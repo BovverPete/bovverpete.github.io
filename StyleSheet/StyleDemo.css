@@ -1,6 +1,6 @@
 :root {
   --bannerGradient: linear-gradient( #B87333, 	#8B4000 );
-  --activeBannerGradient: linear-gradient(#8f5927, 	#693101 );
+  --activeBannerGradient: linear-gradient(#8f5927, 	#6a3201 );
   --toolbarGradient: linear-gradient( #606060, #454444);
   --backgroundColor: #fff;
   --primColor: #dcdcdc;
@@ -14,7 +14,7 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
-      background-color:#F2D2BD;
+      background-color:#c0bebe;
   }
 
 
@@ -507,3 +507,82 @@ transform: translateX(0);
   .alt-two h1:before {
     left:50%; margin-left:-30px;
   }
+
+
+
+/* Booking form CSS */
+div.bookingFormWrapper {
+  margin: 1em 25em 5em 25em;
+  padding: 1em;
+  background-color: #838181;
+  border-radius: 0.25em;
+}
+
+div.bookingFormGroup {
+  margin: 20px 0;
+}
+
+div.bookingFormGroup.inlined {
+  width: 49%;
+  display: inline-block;
+  float:left;
+  margin-left: 1%;
+}
+
+label {
+  display: block;
+  font-family: 'Raleway';
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-size: 1.25em;
+}
+
+input, select, textarea {
+  border-radius: 2px;
+  border: 2px solid #777;
+  box-sizing: border-box;
+  font-size: 1.25em;
+  font-family: 'Raleway';
+  font-weight: bold;
+  width: 100%;
+  padding: 10px;
+}
+
+div.bookingFormGroup.inlined input {
+  width: 95%;
+  display: inline-block;
+}
+
+textarea {
+  height: 250px;
+}
+
+hr {
+  border:1px dashed #fff;
+}
+
+button {
+  background-color: #904402;
+  border-radius: 7.5px;
+  color: #ffffff !important;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  font-weight:600;
+}
+
+button:hover {
+  background-color: #431d01c0;
+  color: #0d227d;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.1em;
+  margin-bottom: 0.8em;
+  width: 80%;
+  padding: 8px;
+}

@@ -45,135 +45,56 @@
     </section>
               
 
-
-<!--
-    The Carousel container
--->
-<div class="carousel">
-    <div class="carousel__nav">
-     <span id="moveLeft" class="carousel__arrow">
-          <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
-      <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
-  </svg>
-      </span>
-      <span id="moveRight" class="carousel__arrow" >
-        <svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
-    <path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
-  </svg>    
-      </span>
-    </div>
-    <div class="carousel-item carousel-item--1">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">The grand moment </h2>
-        <h1 class="carousel-item__title">Luxury stays</h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Find out more</a>
-          </div>
+<div class="bookingFormWrapper">
+    <form action="reservation.php" method="post">
+      <div class="bookingFormGroup">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
       </div>
-    </div>
-    <div class="carousel-item carousel-item--2">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">The big picture </h2>
-        <h1 class="carousel-item__title">Minimal hassle</h1>
-        <p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
-        <a href="#" class="carousel-item__btn">What we offer</a>
-          </div>
+      <div class="bookingFormGroup">
+        <label for="email">Your E-mail</label>
+        <input type="email" id="email" name="visitor_email" placeholder="john.doe@email.com" required>
       </div>
-    </div>
-      <div class="carousel-item carousel-item--3">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">For times that suit you </h2>
-        <h1 class="carousel-item__title">Our offers </h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Explore availability</a>
-          </div>
+      <div class="bookingFormGroup">
+        <label for="phone">Your Phone</label>
+        <input type="tel" id="phone" name="visitor_phone" placeholder="05xxxxxxxxx"  required>
+      </div><!--pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4})-->
+      <hr>
+      <div class="bookingFormGroup inlined">
+        <label for="adult">Adults</label>
+        <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
       </div>
-    </div>
-    
-     <div class="carousel-item carousel-item--4">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">Beach </h2>
-        <h1 class="carousel-item__title">Leisure and work </h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">Our facilities</a>
-          </div>
+      <div class="bookingFormGroup inlined">
+        <label for="child">Children</label>
+        <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
       </div>
-    </div>
-    
-   <div class="carousel-item carousel-item--5">
-      <div class="carousel-item__image"></div>
-      <div class="carousel-item__info">
-        <div class="carousel-item__container">
-        <h2 class="carousel-item__subtitle">properties </h2>
-        <h1 class="carousel-item__title">Our portfolio</h1>
-        <p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-        <a href="#" class="carousel-item__btn">View our range of properties</a>
-          </div>
+      <div class="bookingFormGroup inlined">
+        <label for="checkin-date">Check-in Date</label>
+        <input type="date" id="checkin-date" name="checkin" required>
       </div>
-    </div>
-    
+      <div class="bookingFormGroup inlined">
+        <label for="checkout-date">Check-out Date</label>
+        <input type="date" id="checkout-date" name="checkout" required>
+      </div>
+      <div class="bookingFormGroup">
+        <label for="room-selection">Select Room Preference</label>
+        <select id="room-selection" name="room_preference" required>
+            <option value="">Choose a Room from the List</option>
+            <option value="connecting">Connecting</option>
+            <option value="adjoining">Adjoining</option>
+            <option value="adjacent">Adjacent</option>
+        </select>
+      </div>
+      <hr>
+      <div class="bookingFormGroup">
+        <label for="message">Anything Else?</label>
+        <textarea id="message" name="visitor_message" placeholder="Tell us anything else that might be important." required></textarea>
+      </div>
+      <button id="button-top" type="submit">Book The Rooms</button>
+    </form>
   </div>
 
-       <div class="bigwrapper">
 
-        <div class="wrapper">
-
-            <div id="box-alt" class="blurbSection">
-                <h2>Highlighted range</h2>           
-            </div>
-                <div class="grid_items">
-                        <div id= "box" class="grid_item">
-                                <h3>House Number 1</h3>
-                                <img id="over" src= "https://cdn.thegentlemansjournal.com/wp-content/uploads/2018/03/SHOT_01-036-2502x1200-c-center.jpg" />
-                                <p>Bur Dubai, Dubai</p>
-                                <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400" target="_blank">House Tour</a>
-                        </div>
-
-                        <div id= "box" class="grid_item">
-                                <h3>Very Stylish Flat</h3>
-                                <img id="over" src= "https://cdn.thegentlemansjournal.com/wp-content/uploads/2018/03/SHOT_01-036-2502x1200-c-center.jpg" />
-                                <p>Dubai Marina, Dubai</p>
-                                <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400"target="_blank">House Tour</a>
-                        </div>
-
-                        <div id= "box" class="grid_item">
-                                <h3>Prime Penthouse</h3>
-                                <img id="over" src= "https://cdn.thegentlemansjournal.com/wp-content/uploads/2018/03/SHOT_01-036-2502x1200-c-center.jpg" />
-                                <p>Deira, Dubai</p>
-                                <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400"target="_blank">House Tour</a>
-                        </div>
-
-                        <div id= "box" class="grid_item">
-                            <h3>House Number 4</h3>
-                            <img id="over" src= "https://cdn.thegentlemansjournal.com/wp-content/uploads/2018/03/SHOT_01-036-2502x1200-c-center.jpg" />
-                            <p>Business Bay, Dubai</p>
-                            <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400"target="_blank">House Tour</a>
-                        </div>
-
-                        <div id= "box" class="grid_item">
-                                <h3>Very Stylish Flat No.2</h3>
-                                <img id="over" src= "https://cdn.thegentlemansjournal.com/wp-content/uploads/2018/03/SHOT_01-036-2502x1200-c-center.jpg" />
-                                <p>The Palm Jumeriah, Dubai</p>
-                                <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400"target="_blank">House Tour</a>
-                        </div>
-
-                        <div id= "box" class="grid_item">
-                                <h3>Nice Looking Beachfront</h3>
-                                <img id="over" src= "https://cdn.thegentlemansjournal.com/wp-content/uploads/2018/03/SHOT_01-036-2502x1200-c-center.jpg" />
-                                <p>Kite Beach, Dubai</p>
-                                <a href="https://youtu.be/s6zR2T9vn2c" class="button fit" data-poptrox="youtube,800x400"target="_blank">House Tour</a>
-                        </div>
-``              </div>
-        </div>
-    </div>
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script><script  src="./script.js"></script>
 
