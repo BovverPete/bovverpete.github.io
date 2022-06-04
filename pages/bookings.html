@@ -46,7 +46,7 @@
               
 
 <div class="bookingFormWrapper">
-    <form action="reservation.php" method="post">
+    <form action="https://script.google.com/macros/s/AKfycbyI920HL8_n29NR8LnSH-LJMVnN9_jbnY593LIw_IWEd2X-LIuu4f-btziv2mqS_eY/exec" method="post" id="bookingForm">
       <div class="bookingFormGroup">
         <label for="name">Your Name</label>
         <input type="text" id="name" name="visitor_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
@@ -151,6 +151,26 @@
       navbar.classList.remove("sticky");
     }
   }
+</script>
+
+<script>
+  
+window.addEventListener("load", function() {
+  const form = document.getElementById('bookingForm');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+      alert("Success!");
+    })
+  });
+});
+
 </script>
 
     </body>
