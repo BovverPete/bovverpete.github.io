@@ -72,7 +72,7 @@ section.header h1{
   position: relative;
   padding: 0;
   margin-top: 1.7em;
-  font-family: "Raleway", sans-serif;
+  font-family: "Playfair Display", serif;
   font-weight: 300;
   font-size: 4em;
   color: #ffffff;
@@ -437,21 +437,26 @@ transform: translateX(0);
   .button-top {
     font-size: 1.2em;
     display: inline-block;
-    font-family: "Raleway", sans-serif;
-    border: 1px solid white;
-    padding: 10px 20px;
-    border-radius: 10px;
+    font-family: "Playfair Display", serif;
+    padding-top: 0.3rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 0.2em;
     cursor: pointer;
-    font-weight: 600;
-    margin-top: 30px;
+    margin-top: 0.5em;
     color: #fff;
+    background-color: #ab6a31;
     text-decoration: none;
     letter-spacing: 0.1em;
+    box-shadow:
+      0 5px 10px rgba(0, 0, 0, 0.1),
+      0 20px 20px rgba(0, 0, 0, 0.05);
   }
   
   .button-top:hover {
-    background-color: white;
-    color: #0d227d;
+    background-color: #e3e1e1;
+    color: #000000;
   }
   
 	.button {
@@ -489,12 +494,12 @@ transform: translateX(0);
   }
   .two h1:before {
     position: absolute;
-    left: 0;
     bottom: 0;
-    width: 60px;
-    height: 2px;
+    margin-left: -3em !important;
+    width: 6em;
+    height: 0.125rem;
     content: "";
-    background-color: #c50000;
+    background-color: #ffffff;
   }
   
   .two h1 span {
