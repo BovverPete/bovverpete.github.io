@@ -35,7 +35,7 @@
     text-align: center;
     padding: 0.6em 0.8em;
     text-decoration: none;
-    font-family: "Playfair Display", serif;
+    font-family: "Playfair Display", serif !important;
     text-transform: capitalize;
     letter-spacing: 0.05rem;
     font-size: 1em;
