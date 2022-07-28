@@ -108,9 +108,10 @@ h1 em {
 .two h1 {
   text-transform: capitalize;
 }
-.two h1:before {
+.two h1:after {
   position: absolute;
   bottom: 0;
+  text-align: center;
   margin-left: -3em !important;
   width: 6em;
   height: 0.125rem;
