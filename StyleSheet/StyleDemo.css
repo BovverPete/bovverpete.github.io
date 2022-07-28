@@ -26,6 +26,7 @@
     background-image:var(--toolbarGradient);
     text-transform: capitalize;
     overflow-x: hidden;
+    margin-bottom: 10px;
   }
   
   #navbar a {
@@ -39,6 +40,8 @@
     text-transform: capitalize;
     letter-spacing: 0.05rem;
     font-size: 1em;
+    margin-bottom: 4px;
+    margin-top: 2px;
   }
   
   #navbar a:hover {
@@ -47,8 +50,9 @@
   }
   
   #navbar a.active {
-    background-color: #383838 ;
+    background-color: rgba(251, 251, 251, 0.141);
     color: white;
+    border-radius: 6px;
   }
   
   .content {
