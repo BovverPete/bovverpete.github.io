@@ -14,7 +14,7 @@
       height: 100%;
       margin: 0px;
       padding: 0px;
-      background-color:#e8e6e6;
+      background-color:#00092c;
   }
 
 
@@ -611,12 +611,32 @@ transform: translateX(0);
 
 /* Booking form CSS */
 
+@media screen and (max-width: 40000px) {
 div.bookingFormWrapper {
-  margin: 1em 25em 5em 25em;
+  margin: 1em 20em 5em 20em;
   padding: 1em;
-  background-color: #838181;
+  background-color: #9a9999;
   border-radius: 0.25em;
 }
+}
+
+@media screen and (max-width: 1250px) {
+div.bookingFormWrapper {
+  margin: 1em 10em 5em 10em;
+  padding: 1em;
+  background-color: #9a9999;
+  border-radius: 0.25em;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  div.bookingFormWrapper {
+    margin: 1em 3em 5em 3em;
+    padding: 1em;
+    background-color: #9a9999;
+    border-radius: 0.25em;
+  }
+  }
 
 div.bookingFormGroup {
   margin: 20px 0;
